@@ -38,9 +38,38 @@ We will evaluate our models using the following metrics:
 
 The repository structure is as follows:
 
-- `data/`: Directory containing the dataset used in the analysis.
+- `Weather.csv`: The dataset sourced from the Australian Government's Bureau of Meteorology.
 - `notebooks/`: Directory housing the Jupyter notebook (`Machine Learning Project.ipynb`) where data preprocessing, algorithm implementation, and model evaluation take place.
 - `README.md`: The document you are currently reading, providing a project overview, dataset details, employed algorithms, and evaluation metrics.
+
+## The Dataset - Weather.csv
+
+The primary dataset for this project is `Weather.csv`, sourced from the Australian Government's Bureau of Meteorology. It contains a comprehensive set of meteorological features and historical weather data. Each row in the dataset represents weather conditions for a specific day.
+
+**Features:**
+- Date: Date of the recorded weather data
+- Location: Geographic location of the weather station
+- MinTemp: Minimum temperature for the day (in degrees Celsius)
+- MaxTemp: Maximum temperature for the day (in degrees Celsius)
+- Rainfall: Amount of rainfall recorded for the day (in millimeters)
+- Evaporation: Daily evaporation (in millimeters)
+- Sunshine: Number of hours of sunshine
+- WindGustDir: Direction of the strongest wind gust
+- WindGustSpeed: Speed of the strongest wind gust (in kilometers per hour)
+- WindDir9am: Wind direction at 9 am
+- WindDir3pm: Wind direction at 3 pm
+- WindSpeed9am: Wind speed at 9 am (in kilometers per hour)
+- WindSpeed3pm: Wind speed at 3 pm (in kilometers per hour)
+- Humidity9am: Relative humidity at 9 am
+- Humidity3pm: Relative humidity at 3 pm
+- Pressure9am: Atmospheric pressure at 9 am (in hPa)
+- Pressure3pm: Atmospheric pressure at 3 pm (in hPa)
+- Cloud9am: Fraction of sky covered by clouds at 9 am
+- Cloud3pm: Fraction of sky covered by clouds at 3 pm
+- Temp9am: Temperature at 9 am (in degrees Celsius)
+- Temp3pm: Temperature at 3 pm (in degrees Celsius)
+- RainToday: Binary indicator of whether it rained today (Yes/No)
+- RainTomorrow: Binary target variable indicating whether it will rain tomorrow (Yes/No)
 
 ## Getting Started
 
